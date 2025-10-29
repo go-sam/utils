@@ -81,6 +81,10 @@ func RandIntRange(start, end int) int {
 	return start + random.Intn(end-start+1)
 }
 
+func RandFloat(start, end float64) float64 {
+	return start + random.Float64()*(end-start+1)
+}
+
 func Capitalise(s string) string {
 	if len(s) == 0 {
 		return s
